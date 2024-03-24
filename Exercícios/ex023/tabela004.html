@@ -18,6 +18,11 @@
         thead{
             border: 1px solid black;
             font-weight: bold;
+            background-color: lightgreen;
+        }
+
+        tbody > tr:nth-child(2n){ 
+            background-color: lightgray;
         }
 
         td{
@@ -30,6 +35,14 @@
             border: 1px solid black;
             font-weight: bold;
 
+        }
+
+        th.Wom{
+            background-color: indianred;
+        }
+
+        th.Men{
+            background-color: aqua;
         }
 
     </style>
@@ -46,7 +59,7 @@
             <th colspan="3">Filmes</th>
         </thead>
         <tr>
-            <th rowspan="3">Mulheres</th>
+            <th rowspan="3" class="Wom">Mulheres</th>
             <td>Ana Maria Santos</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -65,7 +78,7 @@
             <td>Big Hero</td>
         </tr>
         <tr>
-            <th rowspan="3">Homens</th>
+            <th rowspan="3" class="Men">Homens</th>
             <td>Bruno Mendonça</td>
             <td>Intocáveis</td>
             <td>Amnésia</td>
