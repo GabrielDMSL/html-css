@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -27,8 +28,20 @@
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(63, 63, 63);
             color: white;
+        }
+
+        thead > tr > th{ /*Usando isso deixara o cabecalho fixado ate o fim da tabela*/
+            position: sticky;
+            top: -1px;
+            background-color: rgb(63, 63, 63);
+        }
+
+        /*Usado para dar o efeito de zebrado em tabela, a quantidade de 'n' celulas sera a quantidade de intervalo entre linhas usandos a cor de fundo escolhida*/
+        /*Pode utilizar 'odd' para impar e 'even' para par*/
+        tbody > tr:nth-child(2n){ 
+            background-color: lightgray;
         }
 
         td.num{
