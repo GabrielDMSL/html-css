@@ -10,6 +10,7 @@
             border: 1px solid black;
             width: 300px;
             height: 200px;
+            border-collapse: collapse;
         }
 
         thead{
@@ -21,13 +22,16 @@
         tr{
             border: 1px solid black;
         }
-
+        
         tr.media{
             background-color: gray;
             color: white;
             font-weight: bolder;
         }
 
+        td{
+            border: 1px solid black;
+        }
 
         th{
             border: 1px solid black;
@@ -40,12 +44,13 @@
         <thead>
             <th rowspan="2">Área</th>
             <th rowspan="2">Disciplinas</th>
-            <th colspan="2">Notas</th>
+            <th colspan="2" scope="colgroup">Notas</th>
             <th rowspan="2">Média</th>
+        </thead>
+        <tr>
             <th>Nota 1</th>
             <th>Nota 2</th>
-        </thead>
-        
+        </tr>
         <tr>
             <th rowspan="4">Exatas</th>
             <td>Matemática</td>
