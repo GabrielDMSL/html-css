@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 05</title>
+    <style>
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid black;
+        }
+
+        thead{
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+        }
+
+        tr{
+            border: 1px solid black;
+        }
+
+        tr.media{
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+        }
+
+
+        th{
+            border: 1px solid black;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th colspan="2">Área</th>
+            <th colspan="2">Disciplinas</th>
+            <th rowspan="2">Notas</th>
+            <th colspan="2">Média</th>
+        </thead>
+        <tr class="media">
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+        </tr>
+        <tr>
+            <th colspan="4">Exatas</th>
+            <td>Matemática</td>
+            <td>7.0</td>
+            <td>7.0</td>
+            <td>7.0</td>   
+        </tr>
+        <tr>
+            <td>Física</td>
+            <td>7.0</td>
+            <td>7.0</td>
+            <td>7.0</td>  
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td>7.0</td>
+            <td>7.0</td>
+            <td>7.0</td>  
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>7.0</td>
+            <td>7.0</td>
+            <td>7.0</td> 
+        </tr>
+        <tr class="media">
+            <th rowspan="4">Média de exatas</th>
+            <td>7.0</td>
+        </tr>
+        <tr>
+            <th colspan="2">Humanas</th>
+            <td>Historia</td>
+            <td>8.0</td>
+            <td>8.0</td>
+            <td>8.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>8.0</td>
+            <td>8.0</td>
+            <td>8.0</td>
+        </tr>
+        <tr class="media">
+            <th rowspan="4">Média Humanas</th>
+            <td>8.0</td>
+        </tr>
+
+    </table>
+</body>
+</html>
